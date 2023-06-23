@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PDF List</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #f9004d;
+
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .pdf-box {
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: auto;
+            margin: 5%;
+            border: 1px solid maroon;
+            margin-bottom: 5%;
+        }
+        .pdf-box::-webkit-scrollbar{
+          width: 0;
+        }
+        .pdf-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .pdf-list-item {
+            margin-bottom: 10px;
+            display: inline-block;
+            width: 30%;
+        }
+        
+        .pdf-link {
+            text-decoration: none;
+            color: maroon;
+            display: inline-block;
+            background-color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border-bottom: 1px solid maroon;
+            width: 90%;
+        }
+        
+        h1 {
+            color: #fff;
+            border-bottom: 1px solid maroon;
+            padding-bottom: 20px;
+        }
+        h2{
+          color: #fff;
+        }
+        ul{
+          border-bottom: 1px solid maroon;
+          margin-bottom: 10px;
+        }
+
+        /* Added header styles */
+        body {
+       margin: 0;
+        }
+      
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 30px 10px;
+  border-bottom: 1px solid maroon;
+}
+
+.header-right {
+  padding-right: 5%;
+}
+
+.header-right a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 30px;
+  text-decoration: none;
+  background-image: linear-gradient(#f9004d, #f9004d);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%, 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.header .active {
+  pointer-events: none;
+}
+
+.logo {
+  padding-left: 5%;
+  text-decoration: none;
+  float: left;
+  color: white;
+}
+
+.header a.logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-size: 100% 0.1em;
+}
+
+.header a::after {
+  background-size: 100% 0.1em;
+}
+
+.header a.active {
+  color: #f9004d;
+  text-decoration: none;
+}
+
+.header-right {
+  float: right;
+}
+
+
+.title {
+  color: white;
+  font-size: 60px;
+  background: black;
+  text-align: center;
+  padding: 20px 0px;
+  padding-bottom: 40px;
+  display: block;
+}
+h2{
+  text-align: left;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.php" class="logo">BNSHS GradHelper</a>
+        <div class="header-right" id="myLinks">
+            <a href="index.php">Home</a>
+            <a href="profile.php">Profile</a>
+            <a class="active" href="active">Reviewers</a>
+            <a href="about.html">About Us</a>
+            <a href="logout.php">Logout</a>
+        </div>
+    </div>
+
+    <div class="pdf-box">
+      <h1>List of Reviewers</h1>
+
+      <div class="list">
+        <h2>UPCAT Questionnaires</h2>
+        <ul class="pdf-list">
+            <li class="pdf-list-item"><a class="pdf-link" href="reviewers/UPCAT/UPCAT-Questions-Language-Reading.pdf" download>UPCAT Language Reading</a></li>
+            <li class="pdf-list-item"><a class="pdf-link" href="reviewers/UPCAT/UPCAT-Questions-Mathematics.pdf" download>UPCAT Mathematics</a></li>
+            <li class="pdf-list-item"><a class="pdf-link" href="reviewers/UPCAT/UPCAT-Questions-Science.pdf" download>UPCAT Science</a></li>
+
+        </ul>
+        </div>
+        <div class="list">
+          <h2>ACET Questionnaires</h2>
+          <ul class="pdf-list">
+              <li class="pdf-list-item"><a class="pdf-link" href="reviewers/ACET/ACET Coverage.png" download>ACET Coverage</a></li>
+              <li class="pdf-list-item"><a class="pdf-link" href="reviewers/ACET/ACET Refresher.pdf" download>ACET Refresher</a></li>
+              <li class="pdf-list-item"><a class="pdf-link" href="reviewers/ACET/ACET Test Booklet 1.pdf" download>ACET Booklet</a></li>
+              <!-- Add more list items if needed -->
+          </ul>
+          </div>      
+          <div class="list">
+        <h2>SAT Questionnaires</h2>
+        <ul class="pdf-list">
+            <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SAT/SAT 1.pdf" download>SAT Questionnaire 1</a></li>
+            <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SAT/SAT 2.pdf" download>SAT Questionnaire 2</a></li>
+            <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SAT/SAT 3.pdf" download>SAT Questionnaire 3</a></li>
+            <!-- Add more list items if needed -->
+        </ul>
+        </div>
+        <div class="list">
+          <h2>FILIPINO Refresher</h2>
+          <ul class="pdf-list">
+              <li class="pdf-list-item"><a class="pdf-link" href="reviewers/FILIPINO/Filipino 1.pdf" download>Filipino Refresher 1</a></li>
+              <li class="pdf-list-item"><a class="pdf-link" href="reviewers/FILIPINO/Filipino 2.pdf" download>Filipino Refresher 2</a></li>
+
+              <!-- Add more list items if needed -->
+          </ul>
+          </div>
+          <div class="list">
+            <h2>ENGLISH Refresher</h2>
+            <ul class="pdf-list">
+                <li class="pdf-list-item"><a class="pdf-link" href="reviewers/ENGLISH/English Grammar.docx" download>English Grammar</a></li>
+                <li class="pdf-list-item"><a class="pdf-link" href="reviewers/ENGLISH/Grammar Diagnostic.pdf" download>Grammar Diagnostic</a></li>
+                <li class="pdf-list-item"><a class="pdf-link" href="reviewers/ENGLISH/Vocabulary List.pdf" download>Vocabulary List</a></li>
+                <!-- Add more list items if needed -->
+            </ul>
+            </div>
+            <div class="list">
+              <h2>SCIENCE Refresher</h2>
+              <ul class="pdf-list" >
+                  <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SCIENCE/BIOLOGY/Bio_Phys.pdf" download>Bio : Physics</a></li>
+                  <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SCIENCE/BIOLOGY/Biology 1.pdf" download>Biology 1</a></li>
+                  <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SCIENCE/BIOLOGY/Biology 2.pdf" download>Biology 2</a></li>
+                  <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SCIENCE/CHEMISTRY/Chem 1.pdf" download>Chemistry 1</a></li>
+                  <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SCIENCE/CHEMISTRY/Chem 2.pdf" download>Chemistry 2</a></li>
+                  <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SCIENCE/PHYSICS/Physics 1.pdf" download>Physics 1</a></li>
+                  <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SCIENCE/PHYSICS/Physics 2.pdf" download>Physics 2</a></li>
+                  <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SCIENCE/PHYSICS/Physics 3.pdf" download>Physics 3</a></li>
+                  <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SCIENCE/SCIENCE READINGS/SCI Readings 1.pdf" download>Science Reading 1</a></li>
+                  <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SCIENCE/SCIENCE READINGS/SCI Readings 2.pdf" download>Science Reading 2</a></li>
+                  <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SCIENCE/SCIENCE READINGS/SCI Readings 3.pdf" download>Science Reading3</a></li>
+                   <li class="pdf-list-item"><a class="pdf-link" href="reviewers/SCIENCE/SCIENCE READINGS/SCI Readings 4.pdf" download>Science Reading4</a></li>
+                </ul>
+              </div>
+              <div class="list">
+                <h2>MATHEMATICS Refresher</h2>
+                <ul class="pdf-list">
+                    <li class="pdf-list-item"><a class="pdf-link" href="reviewers/MATHEMATICS/Mathematics 1.pdf" download>Mathematics 1</a></li>
+                    <li class="pdf-list-item"><a class="pdf-link" href="reviewers/MATHEMATICS/Math Formula Guide.pdf" download>Math Formulas</a></li>
+                    <li class="pdf-list-item"><a class="pdf-link" href="reviewers/MATHEMATICS/Math Readings 1.pdf" download>Math Readings 1</a></li>
+                    <li class="pdf-list-item"><a class="pdf-link" href="reviewers/MATHEMATICS/Math Readings 2.pdf" download>Math Readings 2</a></li>
+                    <li class="pdf-list-item"><a class="pdf-link" href="reviewers/MATHEMATICS/Math Readings 3.pdf" download>Math Readings 3</a></li>
+                    <li class="pdf-list-item"><a class="pdf-link" href="reviewers/MATHEMATICS/Math Readings 4.pdf" download>Math Readings 4</a></li>
+                    <!-- Add more list items if needed -->
+                </ul>
+                </div>
+                
+              <div class="list">
+                <h2>GENERAL INFORMATION Refresher</h2>
+                <ul class="pdf-list">
+                    <li class="pdf-list-item"><a class="pdf-link" href="reviewers/GENERAL INFORMATION/General Information 1.pdf" download>General Information 1</a></li>
+                    <li class="pdf-list-item"><a class="pdf-link" href="reviewers/GENERAL INFORMATION/General Information 2.pdf" download>GGeneral Information 2</a></li>
+                    <li class="pdf-list-item"><a class="pdf-link" href="reviewers/GENERAL INFORMATION/Reasoning.pdf" download>Logical Reasoning</a></li>
+                    <!-- Add more list items if needed -->
+                </ul>
+                </div>
+    </div>
+</body>
+</html>

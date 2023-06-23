@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  background-color: #161616;
+}
+      
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 30px 10px;
+  border-bottom: 1px solid maroon;
+}
+
+.header-right {
+  padding-right: 5%;
+}
+
+.header-right a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 30px;
+  text-decoration: none;
+  background-image: linear-gradient(#f9004d, #f9004d);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%, 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.header .active {
+  pointer-events: none;
+}
+
+.logo {
+  padding-left: 5%;
+  text-decoration: none;
+  float: left;
+  color: white;
+}
+
+.header a.logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-size: 100% 0.1em;
+}
+
+.header a::after {
+  background-size: 100% 0.1em;
+}
+
+.header a.active {
+  color: #f9004d;
+  text-decoration: none;
+}
+
+.header-right {
+  float: right;
+}
+
+
+.title {
+  color: white;
+  font-size: 60px;
+  background: black;
+  text-align: center;
+  padding: 20px 0px;
+  padding-bottom: 40px;
+  display: block;   
+}
+.about{
+    margin-top: 5%;
+    color: white;
+    font-size: 130%;
+    border: 1px solid maroon;
+    margin: 5% 5%;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    padding: 0 10%;
+    font-size: 100%;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+  .header-right{
+    font-size: 25px;
+  }
+  .text-success {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-right{
+    padding: 0; 
+    font-size: 25px;
+  }
+  .header a {
+    color: white;
+    padding: 20px 23px;
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    float:left;
+  }
+  .title {
+    font-size: 30px;
+  }
+  }
+</style>
+<body>
+    <div class="header">
+        <a href="index.php" class="logo">BNSHS GradHelper</a>
+        <div class="header-right" id="myLinks">
+            <a href="index.php">Home</a>
+            <a href="profile.php">Profile</a>
+            <a href="reviewers.html">Reviewers</a>
+            <a class="active">About Us</a>
+            <a href="logout.php">Logout</a>
+        </div>
+    </div>
+<div class="about">
+    <h1 id="borderbot"> About Us</h1>
+    <p>Welcome to GradHelper!</p>
+
+    <p>GradHelper is a comprehensive online platform designed to assist high school graduates in their journey towards higher education. Our mission is to provide valuable information and resources that will help students make informed decisions about their academic and career paths.</p>
+    
+    <p>At GradHelper, we understand the challenges that high school graduates face when it comes to choosing the right university and preparing for college admission exams. That's why we have curated a wealth of information, including top universities for specific courses and comprehensive guides for college admission exams such as SAT, ACET, and UPCAT.</p>
+    
+    <p>Our platform is not just limited to providing information. We also strive to foster a supportive community where students can connect with mentors, share experiences, and seek guidance. GradHelper serves as a hub for students to find valuable insights and connect with individuals who have firsthand knowledge and expertise.</p>
+    
+    <p>GradHelper is the result of a collaborative effort by students completing their capstone project and pursuing the subject of Inquiries Investigation and Immersion (IIM). Our team is dedicated to developing a user-friendly and accessible platform that empowers high school graduates in making well-informed decisions for their future.</p>
+    
+    <p>Join us at GradHelper and embark on a transformative journey towards academic excellence and personal growth. We are here to support you every step of the way!</p>
+    
+</div>
+</body>
+</head> 
+</html>
