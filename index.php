@@ -6,12 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="header.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<?php
-	session_start();
-	if(!ISSET($_SESSION['userID'])){
-		header('location:index.php');
-	}
-?>
+
 </head>
     <div class="header">
         <a href="index.php" class="logo">BNSHS GradHelper</a>
@@ -25,14 +20,7 @@
       </div>
     <!-- Start of Body-->
     <div class="greetings">
-    <?php
-        require 'users/connection.php';
-
-        $query = mysqli_query($conn, "SELECT * FROM `users` WHERE `userID`='$_SESSION[userID]'") or die(mysqli_error());
-        $fetch = mysqli_fetch_array($query);
-
-        echo "<h2>Welcome, " . $fetch['name'] . "</h2>";
-    ?>
+    
 </div>
 
 <div class="choice">
