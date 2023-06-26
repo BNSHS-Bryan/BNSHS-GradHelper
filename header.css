@@ -73,7 +73,7 @@ body {
   display: block;
 }
 .greetings{
-  background-color: black;
+  background-color: #161616;
   color: white;
   margin: 0;
   border-bottom: 1px solid maroon;
@@ -85,14 +85,14 @@ h2{
   margin: 0;
 }
 .choice{
-  background-color: black;
+  background-color: #161616;
   color: white;
   margin: 0;
   padding-left: 5%;
   padding-top: 25px;
 }
 .services {
-  background: #000;
+  background: #161616;
   width: 100%;
   padding: 0px 0px;
   display: grid;
