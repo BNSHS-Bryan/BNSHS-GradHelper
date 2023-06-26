@@ -71,6 +71,7 @@ body {
   padding: 20px 0px;
   padding-bottom: 40px;
   display: block;
+  background-color: #161616;
 }
 .greetings{
   background-color: #161616;
@@ -268,20 +269,6 @@ h1 {
   background-image: none;
 }
 
-#slu {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(images/slu/slu.png);
-  background-position: center;
-  background-size: cover;
-  order: 7;
-}
-
-#slu:hover {
-  background-image: none;
-}
 
 #usl {
   background-image: linear-gradient(
@@ -335,7 +322,7 @@ select{
 .services::-webkit-scrollbar
 {
 	width: 12px;
-	background-color: #000;
+	background-color: #161616;
 }
 
 .services::-webkit-scrollbar-thumb
