@@ -1,0 +1,63 @@
+button{
+    font-size: 30px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+button a{
+    text-decoration: none;
+    color: maroon;
+}
+button a::after{
+    color: maroon;
+}
+p{line-height: 27px;
+font-size: 20px;
+color: white;
+margin-left: 5%;
+line-height: 30px;
+}
+h1{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    color: white;
+}
+a{
+    color: white
+}
+a::after{
+    color: white;
+}
+body{
+    background-color: black;
+}
+.box{
+    margin: 5%;
+    border: 1px solid maroon;
+}
+.details{
+    border: 1px solid maroon;
+    margin: 2%;
+}
+.course{
+    border: 1px solid maroon;
+    margin: 2%;
+}
+.contact{
+    border: 1px solid maroon;
+    margin: 2%;
+}
+b{
+    color: #e49400;
+    margin-right: 15px;
+}
+.disclaimer{
+    color: red;
+}
+h2{
+    margin-left: 3%;
+}
