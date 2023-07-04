@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PDF List</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .pdf-box {
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: auto;
+            margin: 5%;
+            border: 1px solid maroon;
+            margin-bottom: 5%;
+        }
+        .pdf-box::-webkit-scrollbar{
+          width: 0;
+        }
+        .pdf-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .pdf-list-item {
+            margin-bottom: 10px;
+            display: inline-block;
+            width: 30%;
+        }
+        
+        .pdf-link {
+            text-decoration: none;
+            color: maroon;
+            display: inline-block;
+            background-color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border-bottom: 1px solid maroon;
+            width: 90%;
+        }
+        
+        h1 {
+            color: #fff;
+            border-bottom: 1px solid maroon;
+            padding-bottom: 20px;
+        }
+        h2{
+          color: #fff;
+        }
+        ul{
+          border-bottom: 1px solid maroon;
+          margin-bottom: 10px;
+        }
+
+        /* Added header styles */
+        body {
+       margin: 0;
+        }
+      a{
+        text-decoration: none;
+      }
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 30px 10px;
+  border-bottom: 1px solid maroon;
+}
+
+.header-right {
+  padding-right: 5%;
+}
+
+.header-right a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 30px;
+  text-decoration: none;
+  background-image: linear-gradient(#f9004d, #f9004d);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%, 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.header .active {
+  pointer-events: none;
+}
+
+.logo {
+  padding-left: 5%;
+  text-decoration: none;
+  float: left;
+  color: white;
+}
+
+.header a.logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-size: 100% 0.1em;
+}
+
+.header a::after {
+  background-size: 100% 0.1em;
+}
+
+.header a.active {
+  color: #f9004d;
+  text-decoration: none;
+}
+
+.header-right {
+  float: right;
+}
+
+
+.title {
+  color: white;
+  font-size: 60px;
+  background: black;
+  text-align: center;
+  padding: 20px 0px;
+  padding-bottom: 40px;
+  display: block;
+}
+h2{
+  text-align: left;
+  text-decoration: underline;
+}
+p{
+    text-align: left;
+    margin-left: 5%;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">BNSHS GradHelper</a>
+        <div class="header-right" id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="reviewers.html">Reviewers</a>
+            <a class="active" href="active">Reviewers</a>
+            <a href="about.html">About Us</a>
+            <a href="logout.php">Logout</a>
+        </div>
+    </div>
+
+    <div class="pdf-box">
+      <h1>List of scholarships-and-grants</h1>
+
+      <div class="list">
+        <a href="https://www.sei.dost.gov.ph/index.php/programs-and-projects/scholarships/undergraduate-scholarships" target="_blank"><h2>DOST Scholarships</h2></a>
+        <ul class="pdf-list">
+            <h2>Pros:</h2>
+                <span><p>School Tuition and other Expenses – DOST scholarship is offering P10, 000 or P8, 000 per semester.</p>
+                <p>P10,000 book allowance.</p>
+                <p>P500 allowance for PE Uniform accredited for First Year Semester.</p>
+                <p>Students who are studying outside their home province will be granted roundtrip allowance.</p>
+                <p>For those who acquired the course of under the Bachelor of Science in Mining, Geology, Physics, Applied Physics, and Physics Teaching will receive a support of P5,000.</p>
+                <p>P4,000 is the given allowance every month for DOST-SEI major or priority courses.</p>
+                <p>If the curriculum is requiring summer classes, P1,500 is granted to the scholar for tuition and other school fees.</p>
+                <p>There is a second book allowance of P500, but you must submit official receipt</p>
+            </span> 
+                <h2>Cons:</h2>
+            <span><p>School Tuition and other Expenses – DOST scholarship is offering P10, 000 or P8, 000 per semester.</p>
+                    <p>You need to go through pressure</p>
+                    <p>Limited Slots</p>
+                    <p>You must serve your country for several years</p>
+                    <p>Must have maintaining grades</p>
+                    <p>Limited to S&T Courses</p>
+                    <p>Must choose college with center of excellency award</p>
+            </span> 
+        </ul>
+        </div>
+        <div class="list">
+            <a href="https://www.sei.dost.gov.ph/index.php/programs-and-projects/scholarships/undergraduate-scholarships" target="_blank"><h2>NCIP Scholarships</h2></a>
+            <ul class="pdf-list">
+                <h2>Pros:</h2>
+                    <span><p>School Tuition and other Expenses – DOST scholarship is offering P10, 000 or P8, 000 per semester.</p>
+                    <p>P10,000 book allowance.</p>
+                    <p>P500 allowance for PE Uniform accredited for First Year Semester.</p>
+                    <p>Students who are studying outside their home province will be granted roundtrip allowance.</p>
+                    <p>For those who acquired the course of under the Bachelor of Science in Mining, Geology, Physics, Applied Physics, and Physics Teaching will receive a support of P5,000.</p>
+                    <p>P4,000 is the given allowance every month for DOST-SEI major or priority courses.</p>
+                    <p>If the curriculum is requiring summer classes, P1,500 is granted to the scholar for tuition and other school fees.</p>
+                    <p>There is a second book allowance of P500, but you must submit official receipt</p>
+                </span> 
+                    <h2>Cons:</h2>
+                <span><p>School Tuition and other Expenses – DOST scholarship is offering P10, 000 or P8, 000 per semester.</p>
+                        <p>You need to go through pressure</p>
+                        <p>Limited Slots</p>
+                        <p>You must serve your country for several years</p>
+                        <p>Must have maintaining grades</p>
+                        <p>Limited to S&T Courses</p>
+                        <p>Must choose college with center of excellency award</p>
+                </span> 
+            </ul>
+          </div>      
+
+    </div>
+</body>
+</html>
