@@ -418,6 +418,13 @@ function changeOrder() {
  break;
 
 }
+    var lastSelectedValue = localStorage.getItem("lastSelectedValue");
+if (lastSelectedValue) {
+  document.getElementById("orderSelect").value = lastSelectedValue;
+}
+localStorage.setItem("lastSelectedValue", selectedValue);
+}
+
 }
 
 </script>
